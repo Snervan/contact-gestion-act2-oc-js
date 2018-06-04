@@ -37,7 +37,8 @@ do {
 
 	if (choixOption == 1) {
 
-		//Les deux prompt permettant de saisir le nom et le prénom à ajouter
+		/*Les deux prompt permettant de saisir le nom et le prénom à ajouter ainsi que la
+		  variable qui recevra la chaîne qui sera saisi par l'utilisateur */
 		var nomSaisie = prompt("Entrez le nom de votre nouveau contact :");
 		var prenomSaisie = prompt("Entrez le prénom de votre nouveau contact :");
 
