@@ -1,5 +1,5 @@
 /* 
-Activité : gestion des contacts
+Activité : Gestion des contacts
 Programmeur : Snervan (RetroMan sur OpenClassrooms)
 Langage : JavaScript
 Description : Affichage dans la console d'une liste de contacts et
@@ -16,14 +16,14 @@ var listeContacts = [{
 		prenom: 'Mélodie'
 	}];
 
-console.log("Bienvenue dans le gestionnaire des contacts");
+console.log("Bienvenue dans le gestionnaire des contacts !");
 
 do {
 	console.log("Tapez 2 pour afficher la liste des contacts\n"
 		 		+ "Tapez 1 pour ajouter un contact\n"
 		 		+ "Tapez 0 ou cliquez sur le bouton \"Annuler\" si vous voulez quitter le programme !");
 
-	var choixOption = Number(prompt("Entrez votre option"));
+	var choixOption = Number(prompt("Entrez l'option de votre choix :"));
 
 	if(choixOption == 2) {
 		console.log("Voilà la liste de tous vos contacts : ");
@@ -38,8 +38,8 @@ do {
 	if (choixOption == 1) {
 
 		//Les deux prompt permettant de saisir le nom et le prénom à ajouter
-		var nomSaisie = prompt("Entrez un nom pour le contact :");
-		var prenomSaisie = prompt("Entrez un prénom pour le contact :");
+		var nomSaisie = prompt("Entrez le nom de votre nouveau contact :");
+		var prenomSaisie = prompt("Entrez le prénom de votre nouveau contact :");
 
 		//On ajoute le nouveau contact avec les identifiants correspondants
 		listeContacts.push({ nom: nomSaisie, prenom: prenomSaisie });
